@@ -28,9 +28,9 @@ Includs:
 
 ![Second](https://i.imgur.com/Fhg6JSr.jpg)
 
-![Third](https://imgur.com/VhYJbdV)
+![Third](https://imgur.com/VhYJbdV.jpg)
 
-![Forth](https://imgur.com/yb9ApdM)
+![Forth](https://imgur.com/yb9ApdM.jpg)
 
 
 LETS SAVE THE PRINCESS WITH MARIO!! 
