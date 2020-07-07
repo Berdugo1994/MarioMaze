@@ -1,0 +1,49 @@
+.root{
+    -fx-background-image: url("../Resources/Images/marioBackground.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+Button {
+    -fx-text-fill: black;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: sandybrown;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 9, 0.0 , 0 , 6 );
+}
+
+Button:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 5px, 5px, 9px, 9px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+ChoiceBox
+{
+    -fx-background-color: sandybrown;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 9, 0.0 , 0 , 6 );
+}
+
+   .choice-box .context-menu { -fx-background-color: bisque; }
+   .choice-box .menu-item:focused { -fx-background-color: forestgreen; }
+   .choice-box .menu-item > .label { -fx-text-fill: black; }
+   .choice-box .menu-item:focused > .label { -fx-text-fill: white; }
+
+TextField
+{
+    -fx-background-color: sandybrown;
+}
+
+MenuBar
+{
+    -fx-background-color: sandybrown;
+}
+
+Label
+{
+    -fx-font-weight: bold;
+}

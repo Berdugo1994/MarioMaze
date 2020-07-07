@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="OpPane" stylesheets="@MainStyle.css" prefHeight="166.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Options">
+   <children>
+      <GridPane prefHeight="166.0" prefWidth="285.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" />
+        </rowConstraints>
+          <children>
+            <Label prefHeight="23.0" prefWidth="196.0" text="Properties" GridPane.columnSpan="2">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font></Label>
+              <ChoiceBox fx:id="choiceBox" prefHeight="25.0" prefWidth="153.0" value="MyMaze" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <items>
+                      <FXCollections fx:factory="observableArrayList">
+                          <String fx:value="MyMaze" />
+                          <String fx:value="Simple" />
+                          <String fx:value="Empty" />
+                      </FXCollections>
+                  </items>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+              </ChoiceBox>
+              <ChoiceBox fx:id="choiceBox2" prefHeight="25.0" prefWidth="153.0" value="BestFS" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <items>
+                      <FXCollections fx:factory="observableArrayList">
+                          <String fx:value="BFS" />
+                          <String fx:value="DFS" />
+                          <String fx:value="BestFS" />
+                      </FXCollections>
+                  </items>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+              </ChoiceBox>
+            <Label text="Maze Generator" GridPane.rowIndex="1" />
+            <Label layoutX="10.0" layoutY="69.0" text="Maze Solver" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" text="Save" GridPane.columnSpan="2" GridPane.rowIndex="4" onAction="#BackTo">
+               <GridPane.margin>
+                  <Insets left="120.0" />
+               </GridPane.margin></Button>
+          </children>
+      </GridPane>
+   </children>
+</AnchorPane>
