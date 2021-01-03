@@ -35,4 +35,11 @@ Includs:
 
 LETS SAVE THE PRINCESS WITH MARIO!! 
 
+** You might have some problems running javafx,
+the main reason must be java Version.
+try fix it by set it to the next Configurations.
+**
+![First](https://i.ibb.co/m9TrKQh/first-Second-Check.png)
+
+![Second](https://i.ibb.co/M6XNhMr/Mario-Maze.png)
 
